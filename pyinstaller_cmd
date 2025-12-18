@@ -1,0 +1,52 @@
+
+pyinstaller -F -c douyinLiveRecord.py --version-file file_version_info.txt --icon="favicon.ico"
+pyinstaller -F -c douyinLiveRecord.py --version-file file_version_info.txt
+pyinstaller -F -w douyinLiveRecord.py --version-file file_version_info.txt
+
+pyinstaller -F -w ^
+--hidden-import=_ssl ^
+--hidden-import=_hashlib ^
+--hidden-import=ssl ^
+--hidden-import=urllib3 ^
+--hidden-import=requests ^
+--hidden-import=cryptography.hazmat.bindings.openssl.binding ^
+app.py --version-file file_version_info.txt --icon="favicon.ico"
+
+pyinstaller -F -w douyinLiveRecord.py
+
+
+
+
+
+pyinstaller -F -c uninstall.py --version-file uninstall_file_version_info.txt --icon="zhubobao.ico"
+
+pyinstaller -F -c update.py --version-file update_file_version_info.txt --icon="icon.ico"
+
+
+
+1、 -F 保证只生成一个 exe可执行文件；
+
+2、 -w 屏蔽应用程序控制窗口
+
+3、 -i 后面加一个 .ico的图标文件，为打包后的应用程序添加图标
+
+4、 main.py 是需要打包的目标py程序
+
+5、 --version-file 后面跟版权信息文件
+
+6、--noconsole  指定不要命令行窗口
+
+7、--onefile  指定不要命令行窗口
+
+8、--icon="logo.ico" 指定应用程序图标
+
+
+
+-F 指只生成一个exe文件，不生成其他dll文件
+-w 不弹出命令行窗口
+-i 设定程序图标 ，其后面的ico文件就是程序图标
+main.py 就是要打包的程序
+-c 生成的exe文件打开方式为控制台打开。
+
+--icon="logo.ico" 指定应用程序图标
+--noconsole 指定不要命令行窗口

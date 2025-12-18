@@ -109,4 +109,4 @@ MIT License
 
 ###### WX: shuaibin99,请我喝咖啡(*￣︶￣)
 
-<img src="images/wechat-qrcode.jpg" alt="1766031980889" style="zoom: 25%;" />
+<img src="images/wechat-qrcode.jpg" alt="1766031980889" style="zoom: 100%;" />

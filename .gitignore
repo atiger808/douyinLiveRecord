@@ -1,0 +1,38 @@
+# 忽略所有 .exe 文件
+*.exe
+
+# 忽略特定名称的可执行文件（可选）
+your_program.exe
+
+# 忽略 Python 打包/编译产物（推荐）
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 忽略 PyInstaller 生成的构建目录（如果你用 PyInstaller 打包）
+build/
+dist/
+*.spec
+
+# 忽略日志、临时文件
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# 如果你用 Windows，可以忽略调试符号等
+*.pdb
+*.ilk
+*.exp
+
+
+node_modules/
+__pycache__/
+package.json
+package-lock.json
+.idea
+.venv
+.env
+.DS_Store
+*.pyc
