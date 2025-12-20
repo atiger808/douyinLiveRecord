@@ -1,3 +1,11 @@
+## 声明：本代码库所有代码均只用于学习研究交流，严禁用于包括但不限于商业谋利、破坏系统、盗取个人信息等不良不法行为，违反此声明使用所产生的一切后果均由违反声明使用者承担。
+
+## 侵权或涉及相关利益请联系作者：[知乎](https://www.zhihu.com/people/187927f4a5ab4cc21cdad3beedbbd148)、[抖音](https://www.douyin.com/user/MS4wLjABAAAAPgc1if5_Uap-mnitkVf1RBnSgFW65l8iBdN9uSuGs7A?from_tab_name=main)、[邮箱](mailto:atiger0614@163.com)
+
+> 2025年12月18日
+
+
+
 # Douyin Live Recorder（抖音直播录制工具）
 
 > 💡 一款基于 Python + Tkinter 的桌面端抖音直播录制工具，支持多任务并发录制、清晰度选择、自动错误提示和日志记录。
@@ -107,6 +115,6 @@ MIT License
 
 
 
-###### WX: shuaibin99,请我喝咖啡(*￣︶￣)
+###### WX: shuaibin99，请我喝一杯咖啡吧(*￣︶￣)
 
 <img src="images/wechat-qrcode.jpg" alt="1766031980889" style="zoom: 100%;" />

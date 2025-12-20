@@ -72,7 +72,7 @@ def save_html(html, filename='html.html'):
         f.write(html)
         print('保存成功')
 
-def parse_html(html):
+def parse_douyinlive_html(html):
     soup = bs(html, 'html.parser')
     index = 0
     script_string = ''
@@ -101,7 +101,6 @@ def parse_html(html):
     return {}
 
 
-
 def get_real_url_DouyinLive(url=None, rid=None):
     room = {}
     if not url:
@@ -126,7 +125,7 @@ def get_real_url_DouyinLive(url=None, rid=None):
     try:
         response = requests.get(url, headers=headers, verify=False)
         logger.info(f'status_code {response.status_code} url: {url}')
-        room = parse_html(response.text)
+        room = parse_douyinlive_html(response.text)
     except Exception as e:
         logger.info(f'error: {e}')
     return room
